@@ -5,12 +5,11 @@ import { Contacto } from '../Interfaces/contacto';
 @Component({
   selector: 'app-contactos',
   templateUrl: './contactos.component.html',
-  styleUrls: ['./contactos.component.css']
+  styleUrls: ['./contactos.component.css'],
 })
 export class ContactosComponent implements OnInit {
-
   //Creamos una instancia privada del servicio de contactos
-  constructor(private comService : ContactosService) { }
+  constructor(private comService: ContactosService) {}
 
   //Creamos un array vacio para guardar los contactos
   listContactos: Contacto[] = [];
@@ -30,5 +29,4 @@ export class ContactosComponent implements OnInit {
     //Ejecutamos el metodo nada mas iniciar el componente
     this.getContactos();
   }
-
 }

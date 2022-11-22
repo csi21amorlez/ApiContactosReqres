@@ -19,12 +19,12 @@ export class ContactosDetailComponent implements OnInit {
 
   //Obtenemos el detalle de los contactos
   getContactos() {
-      this.ruta.paramMap.subscribe((parametros) =>{
-        let id = Number(parametros.get('id'));
-        this.comService.getContactoDetail(id).subscribe((resp:any) =>{
-          this.listContactos = resp.data;
-        });
+    this.ruta.paramMap.subscribe((parametros) => {
+      let id = Number(parametros.get('id'));
+      this.comService.getContactoDetail(id).subscribe((resp: any) => {
+        this.listContactos = resp.data;
       });
+    });
   }
 
   ngOnInit(): void {
