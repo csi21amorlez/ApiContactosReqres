@@ -1,0 +1,20 @@
+<div class="container shadow">
+
+  <div class="col d-flex justify-content-center">
+
+    <div class="col-sm-6 m-4">
+
+      <div class="card">
+
+        <div class="card-body text-center" *ngFor="let con of listContactos">
+
+          <h5 class="card-title">{{ con.first_name }} {{ con.last_name }}</h5>
+
+          <a routerLink="/ContactosDetail/{{ con.id }}" class="btn btn-dark">Detalles</a>
+
+          <hr/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

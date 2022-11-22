@@ -1,0 +1,15 @@
+<div class="container shadow">
+  <div class="col d-flex justify-content-center">
+    <div class="card" style="width: 18rem" *ngIf="listContactos">
+      <img src="{{ listContactos.avatar }}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <p class="card-text">
+          {{ listContactos.first_name }}  {{ listContactos.last_name }}
+        </p>
+        <p class="card-text">Email: {{ listContactos.email }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
